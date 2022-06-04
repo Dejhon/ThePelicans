@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/reserve.css">
+</head>
+<body>
+    
+     <form action="/bk/reserve" method="post" autocomplete="off">
+         <h1><%= title%></h1>
+         <div class="container">
+             <div class="name">
+                 <label>Full Name:</label>
+                 <input type="text" name="c_nm" placeholder="Full Name" required>
+             </div>
+             <div class="res_type">
+                 <label for="">Select Reservation type:</label><br>
+                 <select name="type">
+                     <option value="1">Business</option>
+                     <option value="2">Casual</option>
+                     <option value="3">Romantic</option>
+                 </select>
+             </div>
+             <div class="quant">
+                 <label>Number of Seats:</label>
+                 <input type="number" name="qt" placeholder="Quantity" required>
+             </div>
+             <div class="date">
+                 <div class="Rdt">
+                     <label for="reservation Date">Reservation Date:</label><br>
+                     <input type="Date" name="r_dt" required>
+                 </div>
+                 <div class="time">
+                     <label for="time">Time of Reservation:</label><br>
+                     <input type="time" name="res_tm" required>
+                 </div>
+             </div>
+             <div id="resnum">
+                <% if(message.length > 0){ %>
+                    <strong>
+                       Reservation Number: <%= message%>
+                    </strong>
+                 <% } %>
+             </div>
+             <div class="submit_btn">
+                 <input type="submit" value="Reserve Table">
+             </div>
+         </div>
+     </form>
+
+</body>
+</html>

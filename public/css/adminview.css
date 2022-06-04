@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Rock+Salt&family=Tangerine:wght@400;700&display=swap');
+
+table{
+    margin: auto;
+    width: 1200px;
+    margin-top: 100px;
+    /* border: 1px solid #4040a1; */
+}
+
+caption{
+    letter-spacing: 2px;  
+    font-size: 40px;
+    color: #4040a1;
+}
+
+th, td{
+    height: 40px;
+    text-align: center;
+    /* border: 1px solid #4040a1; */
+}
+
+th{
+    font-size: 22px;
+    border: 1px solid #4040a1;
+    border-radius: 6px;
+    border-left: none;
+    border-right: none;
+}
+
+td{
+    font-size: 20px;
+    height: 55px;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn button{
+    border: 1px solid #4040a1;
+    background-color: #4040a1;
+    padding: 3px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.btn button a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+/* 
+.ft_nav{
+    background-color: #92a8d1;
+    height: 70px;
+    padding-right: 30px;
+} */
+ 
+.ft_nav ul{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content:center;
+    padding-top: 15px;
+}
+
+.ft_nav ul .logo{
+    margin-right: 400px;
+    font-family: 'Rock Salt', cursive;    
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: #deeaee;
+    line-height: 1;
+    margin-top: 5px;
+}
+
+.ft_nav ul li{
+    list-style: none;
+    border: 1px solid #deeaee;
+    border-radius: 5px;
+    background-color: #deeaee;
+    padding: 8px;
+}
+
+.ft_nav ul li a {
+    text-decoration: none;
+    color: #4040a1;
+    font-size: 20px;
+}

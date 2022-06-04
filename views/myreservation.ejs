@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/myreservation.css">
+</head>
+<body>
+    
+        <table  cellspacing="0">
+        <caption><%= title %></caption>
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Reservation Type</th>
+                    <th>Quantity</th>
+                    <th>Reservation Date</th>
+                    <th>Reservation Time</th>
+                    <th>Reservation Number</th>
+                    <th>Action</th>
+                </tr>
+            </thead>   
+            <tbody>
+                <% data.forEach(res => {  %> 
+                <tr>
+                    <td> <input type="hidden" value="<%= res.id %>" name="res_id"><%= res.Customer %> </td>
+                    <td> <%= res.Reservation_Type %> </td>
+                    <td> <%= res.Quantity %> </td>
+                    <td> <%= res.ReservationDT %> </td>
+                    <td> <%= res.Reservation_Time %> </td>
+                    <td> <%= res.Reservation_Num %> </td>
+                    <td class="btn">
+                        <button><a href="/rs/delete/<%= res.id %>">CANCEL</a></button>
+                    </td>
+                </tr>
+                <% }); %> 
+            </tbody>         
+        </table>
+
+</body>
+</html>

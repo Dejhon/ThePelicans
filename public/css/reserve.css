@@ -1,0 +1,87 @@
+form{
+    margin: auto;
+    width: 500px;
+    border: 1px solid #92a8d1;
+    border-radius: 5px;
+    margin-top: 90px;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+}
+
+input{
+    outline: none;
+}
+
+h1{
+    color: #4040a1;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+.container .date{
+    display: flex;
+    gap: 20px;
+}
+
+.name input, .quant input{
+    height: 30px;
+    width: 450px;
+    border: 1px solid #92a8d1;
+    border-radius: 5px;
+}
+
+.name label, .quant label{
+    float: left;
+    margin-left: 25px;
+    color: #4040a1;
+}
+
+.res_type select{
+    width: 450px;
+    height: 35px;
+    border: 1px solid #92a8d1;
+    border-radius: 5px;
+}
+
+.res_type label{
+    float: left;
+    margin-left: 25px;
+    color: #4040a1;
+}
+
+ .date input{
+    height: 30px;
+    width: 200px;
+    margin-left: 25px;
+    border: 1px solid #92a8d1;
+    border-radius: 3px;
+}
+
+.date label{
+    color: #4040a1;
+    float: left;
+    margin-left: 25px;
+}
+
+.resnum{
+    color: #4040a1;
+    font-size: 18px;
+}
+
+.submit_btn input{
+    height: 30px;
+    width: 120px;
+    border: #4040a1;
+    background-color: #4040a1;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}

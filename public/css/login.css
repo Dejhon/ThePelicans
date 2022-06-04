@@ -1,0 +1,49 @@
+form{
+    margin: auto;
+    width: 500px;
+    border: 1px solid #92a8d1;
+    border-radius: 5px;
+    margin-top: 90px;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+}
+
+input{
+    outline: none;
+}
+
+h1{
+    color: #4040a1;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.name input, .res_num input{
+    height: 30px;
+    width: 450px;
+    border: 1px solid #92a8d1;
+    border-radius: 5px;
+}
+
+.name label, .res_num label{
+    float: left;
+    margin-left: 25px;
+    color: #4040a1;
+}
+
+ .sub_btn input{
+    height: 30px;
+    width: 120px;
+    border: #4040a1;
+    background-color: #4040a1;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}

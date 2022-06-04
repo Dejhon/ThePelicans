@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/reservationedit.css">
+</head>
+<body>
+    
+      <form action="/ad/update" method="post">
+          <h1>Reservation</h1>
+          <div class="container">
+              <div class="quantity">
+                  <input type="hidden" name="id" value="<%= data.id%>">
+                  <input type="number" value="<%= data.Quantity %>" name="qt" required>
+              </div>
+              <div class="date">
+                <input type="date" value="<%= data.date%>" name="date" required>
+             </div>
+             <div class="time">
+                <input type="time" value="<%= data.time%>" name="time" required>
+            </div>
+             <div class="sub">
+                 <input type="submit" value="UPDATE">
+             </div>
+          </div>
+      </form>
+
+</body>
+</html>
