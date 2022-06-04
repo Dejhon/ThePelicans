@@ -1,0 +1,12 @@
+.header{
+    display: grid;
+	place-items: center;
+    margin-top: 100px;
+}
+
+.header h1{
+    font-size: 120px;
+    text-align: center;
+    color: #4040a1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
