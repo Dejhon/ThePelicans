@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Rock+Salt&family=Tangerine:wght@400;700&display=swap');
 
+.logout{
+    margin-top: 20px;
+    margin-right: 90px;
+}
+
+.logout button{
+    padding: 5px;
+    border: 1px solid #4040a1 ;
+    border-radius: 5px;
+    background-color: #4040a1;
+    float: right;
+}
+
+.logout button a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+}
+
 table{
     margin: auto;
     width: 1200px;
-    margin-top: 100px;
+    margin-top: 50px;
     /* border: 1px solid #4040a1; */
 }
 
