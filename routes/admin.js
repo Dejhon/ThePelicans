@@ -43,9 +43,10 @@ router.get('/delete/:id', function(req, res, next){
     })
 })
 
-router.get('/logout', function (req, res) {
+
+ router.get('/logout', function (req, res) {
     req.session.destroy(()=>{
-        res.redirect('/')
+        res.redirect('/auth/admin')
     });
  });
 

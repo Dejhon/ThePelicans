@@ -24,4 +24,10 @@ router.get('/delete/:id', function(req, res, next){
     })
 })
 
+router.get('/userlogout', function (req, res) {
+    req.session.destroy(()=>{
+        res.redirect('/')
+    });
+ });
+
 module.exports = router;
