@@ -5,7 +5,7 @@ const conn = require('../lib/db');
 var router = express.Router();
 
 router.get('/allReserves', (req, res)=>{
-    let sql = "SELECT r.cust_nm AS Customer, r.quant AS Quantity, r.id, date_format(r.res_dt, '%Y-%m-%d') AS ReservationDT, TIME_FORMAT(r.res_time, '%h:%i:%p') AS Reservation_Time, r.res_num AS Reservation_Num, rt.type AS Reservation_Type FROM thepelicans.reservation AS r JOIN thepelicans.reservetype AS rt ON r.res_type_id = rt.id"
+    let sql = "SELECT UCASE(r.cust_nm) AS Customer, r.quant AS Quantity, r.id, date_format(r.res_dt, '%Y-%m-%d') AS ReservationDT, TIME_FORMAT(r.res_time, '%h:%i:%p') AS Reservation_Time, r.res_num AS Reservation_Num, rt.type AS Reservation_Type FROM thepelicans.reservation AS r JOIN thepelicans.reservetype AS rt ON r.res_type_id = rt.id"
     conn.query(sql, (err, rows)=>{
         if(err) throw err
           res.render("adminView", {
