@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Rock+Salt&family=Tangerine:wght@400;700&display=swap');
 
 .logout{
-    margin-top: 20px;
-    margin-right: 90px;
+   display: flex;
+   gap: 10px;
+   float: right;
+   margin-right: 90px;
 }
 
 .logout button{

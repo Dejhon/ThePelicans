@@ -43,6 +43,24 @@ router.get('/delete/:id', function(req, res, next){
     })
 })
 
+router.get('/dates', (req, res)=>{
+    conn.query('SELECT * FROM reservation', (err, rows)=>{
+        if(err) throw err
+        res.render('Dates',{
+            data: rows
+        })
+    })
+})
+
+router.post('/resdt', (req, res)=>{
+    conn.query('SELECT date_format(res_dt, "%Y-%m-%d") AS Date, count(cust_nm) AS total from thepelicans.reservation where res_dt =?',[req.body.resDT], (err, rows)=>{
+        if(err) throw err
+        res.render('ReservationDates',{
+            data: rows
+        })
+    })
+})
+
 
  router.get('/logout', function (req, res) {
     req.session.destroy(()=>{
